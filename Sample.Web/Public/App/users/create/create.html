@@ -1,0 +1,17 @@
+﻿<div class="panel panel-default center-block">
+  <div class="panel-heading">
+    <h4>Create new user</h4>
+  </div>
+  <form name="createUserForm" ng-submit="createUser(createUserForm)">
+    <div class="panel-body">
+      <cts-server-errors errors="errors"></cts-server-errors>
+      <cts-input ng-model="createUserForm.firstName" title="Fisrt name" error="firstName"></cts-input>
+      <cts-input ng-model="createUserForm.lastName" title="Last name" error="lastName"></cts-input>
+      <cts-input ng-model="createUserForm.email" title="E-mail" error="email"></cts-input>
+      <cts-password ng-model="createUserForm.password" title="Password" error="password"></cts-password>
+    </div>
+    <div class="panel-footer clearfix">
+      <button type="submit" class="btn btn-primary" btn-loading="isBusy" data-loading-text="Creating">Create</button>
+    </div>
+  </form>
+</div>

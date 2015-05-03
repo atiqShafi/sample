@@ -1,0 +1,7 @@
+﻿<div class="page-heading">
+  <h2 class="sub-header">Users list</h2>
+</div>
+
+<button ui-sref="users.create" class="btn btn-primary"><i class="fa fa-plus"></i>&nbsp;Create new</button>
+
+<div kendo-grid="usersGrid" k-options="usersGrid" k-on-change="selectUser(dataItem)" style="margin-top: 5px;"></div>

@@ -1,0 +1,13 @@
+﻿<div class="modal-header" ng-show="title">
+  <button type="button" class="close" ng-click="$dismiss()">×</button>
+  <h4 class="modal-title" ng-bind-html="title"></h4>
+</div>
+
+<div class="modal-body clearfix">
+  <div ng-bind-html="content"></div>         
+  <div class="pull-right">          
+    <button type="button" ng-click="ok()" btn-loading="isBusy" data-loading-text="{{buttonBusyText}}" class="btn btn-success">{{buttonText}}</button>
+    <button class="btn btn-su" ng-click="$dismiss()">Zrušit</button>
+  </div>
+  <div class="clear-fix"></div>
+</div>

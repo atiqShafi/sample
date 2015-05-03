@@ -1,0 +1,19 @@
+﻿<br/>
+<div class="col-md-6 col-md-offset-3">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="sub-header">Login</h2>
+    </div>
+    <form name="loginForm" ng-submit="login(loginForm)">
+      <div class="panel-body">
+          <cts-server-errors errors="errors"></cts-server-errors>
+          <cts-input value="admin@sample.cz" error="email" ng-model="loginForm.email" title="E-mail"></cts-input>
+          <cts-password value="admin" error="password" ng-model="loginForm.password" title="Password"></cts-password>
+        </div>
+        <div class="panel-footer">
+          <button type="submit" class="btn btn-primary" btn-loading="isBusy" data-loading-text="loging">Login</button>
+        </div>
+    </form>
+  </div>
+</div>
+

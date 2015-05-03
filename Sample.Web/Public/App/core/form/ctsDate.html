@@ -1,0 +1,5 @@
+﻿<div class="form-group" ng-class="{'has-error': $parent.errors[error], 'required':isRequired }">
+  <label class="control-label">{{title}}</label> 
+  <input ng-change="updateModel(ngModel)" bs-datepicker ng-model="ngModel" data-min-date="{{min}}" data-max-date="{{max}}" placeholder="{{title}}" class="form-control" />
+  <span class="help-block with-errors" ng-show="$parent.errors[error]">{{$parent.errors[error]}}</span>
+</div>

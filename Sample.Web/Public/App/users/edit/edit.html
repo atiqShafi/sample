@@ -1,0 +1,17 @@
+﻿<div class="panel panel-default center-block">
+  <div class="panel-heading">
+    <h4>Edit user {{displayName}}</h4>
+  </div>
+  <form name="editUserForm" ng-submit="editUser()">
+    <div class="panel-body">
+      <cts-server-errors errors="errors"></cts-server-errors>
+      <cts-input ng-model="user.firstName" title="First name" error="firstName"></cts-input>
+      <cts-input ng-model="user.lastName" title="Last name" error="lastName"></cts-input>
+      <cts-input ng-model="user.email" title="E-mail" error="email"></cts-input>
+    </div>
+    <div class="panel-footer clearfix">
+      <button type="submit" class="btn btn-primary" btn-loading="isBusy" data-loading-text="Updating">Update</button>
+      <button type="button" ng-click="deleteUser()" class="btn btn-danger pull-right">Delete</button>
+    </div>
+  </form>
+</div>

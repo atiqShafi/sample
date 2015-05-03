@@ -1,0 +1,8 @@
+﻿<div class="form-group" ng-class="{'has-error': $parent.errors[error]}">
+  <div class="checkbox ctsCheckox">
+    <label>
+      <input ng-change="updateModel(ngModel)" type="checkbox" ng-model="model" /><span class="title">{{title}}</span>
+    </label>
+    <span class="help-block with-errors" ng-show="$parent.errors[error]">{{$parent.errors[error]}}</span>
+  </div>
+</div>
